@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72128254-c0e9-42ec-86c9-b68ea8fdfa72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/modals/actors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/entities/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/entities/actor.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/actor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/entities/movie.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/movie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/modals/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/modals/actors.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/modals/moviesData.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/moviesData.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/modals/actors.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/actors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/modals/box_offices.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/box_offices.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/modals/directors.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/directors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/modals/genres.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/genres.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/modals/movies.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/movies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/modals/moviesData.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/moviesData.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/modals/studios.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/studios.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/box_office.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/box_office.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +33,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/modals/box_offices.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -56,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.box_office">
+  <component name="RunManager" selected="Python.actors">
     <configuration name="actors" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="jolita20200120" />
       <option name="INTERPRETER_OPTIONS" value="" />

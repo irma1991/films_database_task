@@ -1,4 +1,5 @@
 from database.database import create_table_database
+from entities.genre import Genre
 
 
 def create_genres_table():
@@ -7,8 +8,6 @@ def create_genres_table():
                         name TEXT)"""
     create_table_database(query)
 
-
-create_genres_table()
 
 def create_genres_movies_table():
     query = """CREATE TABLE IF NOT EXISTS genres_movies (
@@ -19,5 +18,8 @@ def create_genres_movies_table():
                         FOREIGN KEY (moviesId) REFERENCES movies(moviesId))"""
     create_table_database(query)
 
-
+create_genres_table()
 create_genres_movies_table()
+
+query_database("PRAGMA table_info(genres)")
+query_database("PRAGMA table_info(genres_movies)")

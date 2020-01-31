@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="72128254-c0e9-42ec-86c9-b68ea8fdfa72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/modals/actors.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/actors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/modals/box_offices.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/box_offices.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/modals/directors.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/directors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/modals/genres.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/genres.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Copy of moviedb.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/database/modals/movies.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/movies.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/modals/moviesData.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/moviesData.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/modals/studios.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/modals/studios.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/movie.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/movie.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,17 +26,18 @@
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectId" id="1WeyiIgEdTdZX17SQu4EmePjFrU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/modals" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/modals/actors.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\moksleivis\DB_relationship_task" />
-      <recent name="C:\Users\moksleivis\DB_relationship_task\movies\entities" />
-      <recent name="C:\Users\moksleivis\DB_relationship_task\movies\database" />
+      <recent name="C:\Users\moksleivis\Desktop\jolita20200120" />
+      <recent name="C:\Users\moksleivis\Desktop\jolita20200120\movies\database" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -55,14 +53,14 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.movies">
-    <configuration name="actors" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="actors" type="PythonConfigurationType" factoryName="Python">
       <module name="jolita20200120" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Irma\PycharmProjects\homework\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\moksleivis\PycharmProjects\as\database.py\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/database/modals" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -76,14 +74,14 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="box_office" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="box_offices" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="jolita20200120" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Irma\PycharmProjects\homework\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\moksleivis\AppData\Local\Programs\Python\Python38-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/database/modals" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -97,35 +95,14 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="database" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="directors" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="jolita20200120" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Irma\PycharmProjects\homework\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/movies/database" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/movies/database/database.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="directors" type="PythonConfigurationType" factoryName="Python">
-      <module name="jolita20200120" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Irma\PycharmProjects\homework\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\moksleivis\PycharmProjects\as\database.py\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/database/modals" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -139,14 +116,14 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="genres" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="genres" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="jolita20200120" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Irma\PycharmProjects\homework\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\moksleivis\AppData\Local\Programs\Python\Python38-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/database/modals" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -160,14 +137,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="movies" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="genres" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="jolita20200120" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Irma\PycharmProjects\homework\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/database/modals" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database/modals/genres.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="movies" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="jolita20200120" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\moksleivis\PycharmProjects\as\database.py\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/database/modals" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -181,14 +179,14 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="studios" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="studios" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="jolita20200120" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Irma\PycharmProjects\homework\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\moksleivis\PycharmProjects\as\database.py\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/database/modals" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -204,12 +202,11 @@
     </configuration>
     <list>
       <item itemvalue="Python.movies" />
+      <item itemvalue="Python.directors" />
+      <item itemvalue="Python.actors" />
       <item itemvalue="Python.genres" />
       <item itemvalue="Python.studios" />
-      <item itemvalue="Python.directors" />
-      <item itemvalue="Python.box_office" />
-      <item itemvalue="Python.database" />
-      <item itemvalue="Python.actors" />
+      <item itemvalue="Python.box_offices" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -229,7 +226,37 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1579526588874</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="kuriu modelius, creatinu lenteles">
+      <created>1579848357254</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1579848357255</updated>
+    </task>
+    <task id="LOCAL−00003" summary="pataisytos gramatines klaidos">
+      <created>1579849208563</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1579849208563</updated>
+    </task>
+    <task id="LOCAL−00004" summary="movies">
+      <created>1579850789032</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1579850789032</updated>
+    </task>
+    <task id="LOCAL−00005" summary="sustojau ties actors.py lenteliu kurimas">
+      <created>1579856473826</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1579856473826</updated>
+    </task>
+    <task id="LOCAL−00006" summary="studio crud done">
+      <created>1580129754189</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1580129754189</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -247,6 +274,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pradzia" />
-    <option name="LAST_COMMIT_MESSAGE" value="pradzia" />
+    <MESSAGE value="kuriu modelius, creatinu lenteles" />
+    <MESSAGE value="pataisytos gramatines klaidos" />
+    <MESSAGE value="movies" />
+    <MESSAGE value="sustojau ties actors.py lenteliu kurimas" />
+    <MESSAGE value="studio crud done" />
+    <option name="LAST_COMMIT_MESSAGE" value="studio crud done" />
   </component>
 </project>

@@ -1,13 +1,13 @@
-from database.database import create_table_database
+from database.database import create_table_database, query_database
 from entities.box_office import BoxOffice
-
 
 def create_box_offices_table():
     query = """CREATE TABLE IF NOT EXISTS box_offices (
-                        boxOfficeId INTEGER PRIMARY KEY AUTOINCREMENT,
-                        gross REAL"""
-
+                        boxofficeId INTEGER PRIMARY KEY AUTOINCREMENT,
+                        gross REAL)"""
     create_table_database(query)
+
+
 
 def insert_into_box_offices_table(boxoffices):  # funkcija laukianti parametro
     query = """INSERT INTO box_offices (boxofficeId, gross) 
@@ -44,3 +44,7 @@ boxoffices4 = BoxOffice(None, 555555)
 # insert_into_box_offices_table(boxoffices4)
 delete_box_offices_table(4)
 get_box_offices_table()
+
+
+
+

@@ -9,20 +9,22 @@ def create_actors_table():
     create_table_database(query)
 
 
-
 def create_actors_movies_table():
     query = """CREATE TABLE IF NOT EXISTS actors_movies (
-                        actors_movies_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        actorsId INTEGER,
-                        moviesId INTEGER,
-                        FOREIGN KEY (actorsId) REFERENCES actors(actorsId),
+                        actors_movies_Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        actorsId int,
+                        moviesId int,
+                        FOREIGN KEY (actorsId) REFERENCES actors(actorsId),                 
                         FOREIGN KEY (moviesId) REFERENCES movies(moviesId))"""
     create_table_database(query)
 
+
 def insert_into_actors_table(actor):  # funkcija laukianti parametro
-    query = """INSERT INTO actors (actorsId, name) VALUES(?, ?)"""
+    query = """INSERT INTO actors (actorsId, name) 
+                      VALUES(?, ?)"""
     params = (actor.actorsId, actor.name)  # paduodu funkcijos laukiamo parametro reiksmes
     query_database(query, params)
+
 
 def insert_actors_movies(name, movie_name):
     query = """INSERT INTO actors_movies (actorsId, moviesId)
@@ -30,6 +32,12 @@ def insert_actors_movies(name, movie_name):
                                         (SELECT moviesId FROM movies WHERE movie_name=?)"""
     params = (name, movie_name)
     query_database(query, params)
+
+
+def get_actors_table():
+    query = "SELECT * FROM actors"
+    query_database(query)
+
 
 def get_actors_movies_table():
     query = "SELECT * FROM actors_movies"

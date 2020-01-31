@@ -1,48 +1,59 @@
-from database.database import create_table_database, query_database
+from datetime import date
 
 from database.database import create_table_database, query_database
 from entities.movie import Movie
+from entities.studio import Studio
+from entities.box_office import BoxOffice
+from entities.director import Director
+from entities.actor import Actor
+from entities.genre import Genre
 
 def create_movies_table():
     query = """CREATE TABLE IF NOT EXISTS movies (
                         moviesId INTEGER PRIMARY KEY AUTOINCREMENT,
                         movie_name TEXT,
-                        release_date DATE,
+                        release_date DATE,                        
                         rating REAL,
                         genre TEXT,
                         studioId INTEGER,
-                        boxOfficeId INTEGER,
-                        FOREIGN KEY(studioId) REFERENCES studios(studioId),
-                        FOREIGN KEY(boxOfficeId) REFERENCES box_offices(boxOfficeId))"""
-
-def insert_into_movies_table(movies):  # funkcija laukianti parametro
-    query = """INSERT INTO movies (moviesId, movie_name, release_date, rating, genre, studioId, boxofficeId ) 
-                      VALUES(?, ?, ?, ?, ?, ?, ?)"""
-    params = (movies.moviesId, movies.movie_name, movies.release_date, movies.rating, movies.genre, movies.studioId, movies.boxofficeId)  # paduodu funkcijos laukiamo parametro reiksmes
-    query_database(query, params)
-
-
-def get_movies_table():
-    query = "SELECT * FROM movies"
-    query_database(query)
+                        boxofficeId INTEGER,
+                        directorsId INTEGER,
+                        actorsId INTEGER,
+                        genresId INTEGER,
+                        FOREIGN KEY (studioId) REFERENCES studios(studioId),
+                        FOREIGN KEY (boxofficeId) REFERENCES box_offices(boxofficeId),
+                        FOREIGN KEY (directorsId) REFERENCES directors(directorsId),
+                        FOREIGN KEY (actorsId) REFERENCES actors(actorsId),
+                        FOREIGN KEY (genresId) REFERENCES genres(genresId)               
+                       )"""
+    create_table_database(query)
 
 
-def update_movies_table(movies):
-    query = "UPDATE movies SET movie_name = ? WHERE moviesId = ?"
-    params = (movies.movie_name, movies.moviesId)
-    query_database(query, params)
-
-def delete_movies_table(moviesId):
-    query = "DELETE FROM movies WHERE moviesId = ?"
-    params = (moviesId, ) #python tuple, jei be skliaustu ir kablelio, butu  variable
-    query_database(query, params)
-
+# create_movies_table)
 # query_database("PRAGMA table_info(movies)")
-create_movies_table()
-# create_table_database("DROP TABLE movies")
-movies1 = Movie(None, "pirmas", 2019, 2.7, "Zanras", 2, 1)
-movies2 = Movie(None, "antras filmas", 2018, 9.2, "Zanras", 1, 2)
-# insert_into_movies_table(movies2)
-movies3 = Movie(2, "update Test", 2018, 9.2, "Zanras", 1, 2)
-update_movies_table(movies3)
-get_movies_table()
+
+def create_movie(movie, studio, boxOffice, director, actor, genre):
+    query = """INSERT INTO movies VALUES (?, ?, ?, ?, ?),
+            SELECT (SELECT studioId FROM studios WHERE studioName=(?)),
+            SELECT (SELECT boxofficeId FROM box_offices WHERE gross=(?)),
+            SELECT (SELECT directorsId FROM directors WHERE Name=(?)),
+            SELECT (SELECT actorsId FROM actors WHERE name=(?)),
+            SELECT (SELECT genresId FROM genres WHERE name=(?))
+            """
+    params = (movie.moviesId, movie.movie_name, movie.release_date, movie.rating, movie.genre,
+              studio.studioId, studio.studioName,
+              boxOffice.boxofficeId, boxOffice.gross,
+              director.directorsId, director.Name,
+              actor.actorsId, actor.name,
+              genre.genresId, genre.name)
+
+    query_database(query, params)
+
+movie = Movie(None, "Pavadinimas", "Data", "Ivertinimas", "Zanras", None, None, None, None, None)
+studio = Studio(None, "Studios pavadinimas")
+boxOffice = BoxOffice(None, "1000")
+director = Director(None, "Director pavadinimas")
+actor = Actor(None, "Actor pavadinimas")
+genre = Genre(None, "Genre pavadinimas")
+
+create_movie(movie, studio, boxOffice, director, actor, genre)

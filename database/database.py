@@ -37,5 +37,3 @@ def create_table_database(query):
         print(error)
     finally:
         connection.close()
-
-

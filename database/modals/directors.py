@@ -1,4 +1,4 @@
-from database.database import create_table_database
+from database.database import create_table_database, query_database
 from entities.director import Director
 
 
@@ -11,12 +11,13 @@ def create_directors_table():
 
 def create_directors_movies_table():
     query = """CREATE TABLE IF NOT EXISTS directors_movies (
-                        directors_movies_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        directorsId INTEGER,
-                        moviesId INTEGER,
-                        FOREIGN KEY (directorsId) REFERENCES directors(directorsId),
+                        directors_movies_Id INTEGER PRIMARY KEY AUTOINCREMENT,  
+                        directorsId int,
+                        moviesId int,
+                        FOREIGN KEY (directorsId) REFERENCES directors(directorsId)                
                         FOREIGN KEY (moviesId) REFERENCES movies(moviesId))"""
     create_table_database(query)
+
 
 def insert_into_directors_table(directors):  # funkcija laukianti parametro
     query = """INSERT INTO directors (directorsId, Name) 
